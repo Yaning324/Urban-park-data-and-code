@@ -2,7 +2,7 @@
 
 *Insights from photographs and reviews*
 
-This repository accompanies a study of 31 parks in Beijing’s Three Hills and Five Gardens area. The study examines how visual features in user-shared photographs, cultural ecosystem services expressed in reviews, and evaluations of park use relate to measured park environments. The supporting materials include image tags and review annotations organised by park, selected summary results, and analysis notebooks.
+This repository accompanies a study of 31 parks in Beijing’s Three Hills and Five Gardens area. The study examines how visual features in user-shared photographs, cultural ecosystem services expressed in reviews, and evaluations of park use relate to measured park environments. The supporting materials include image tags and review annotations organised by park, selected summary results, and analysis code.
 
 ## Repository contents
 
@@ -35,9 +35,9 @@ The following workbooks are in `coding & result`.
 | `Review_Element_Recognition.xlsx` | Landscape elements identified in CES and EXP evidence. The `Evidence composition` sheet reports eligible review records, matches and composition shares for landscape categories G1–G7 by review label. |
 | `Integrated_Associations.xlsx` | The 174 retained associations across image tags and visual clusters, review labels and evidence, and park-level indicators. The `Associations` sheet records each variable pair, the data basis, phi or Spearman coefficients, p-values, Benjamini–Hochberg q-values and 95% confidence intervals. The q-values were calculated across all 764 estimable pairs. |
 
-## Notebooks
+## Analysis code
 
-| Notebook in `coding & result` | Purpose |
+| File in `coding & result` | Purpose |
 | --- | --- |
 | `CES_Gemini_25_Flash_Annotation.ipynb` | Assigns CES categories and sentiment with Gemini 2.5 Flash and extracts supporting spans from reviews. |
 | `EXP_Gemini_25_Flash_Annotation.ipynb` | Identifies dimensions and sentiment of park use with Gemini 2.5 Flash and extracts supporting spans from reviews. |
@@ -49,6 +49,7 @@ The following workbooks are in `coding & result`.
 | `CES_Ward_Profile_Radar_Charts.ipynb` | Groups parks using Ward clustering and plots the four standardised CES profiles (Fig. 7a–d). |
 | `EXP_Ward_Profile_Radar_Charts.ipynb` | Groups parks using Ward clustering and plots the four standardised EXP profiles (Fig. 8a–d). |
 | `Places365_Scene_Classification.ipynb` | Exploratory photo scene classification with Places365. |
+| `run_rda.py` | Redundancy analysis (RDA) of park environmental indicators (OBJ) and RAM-derived tag composition. |
 
 ## Running the notebooks
 
